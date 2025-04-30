@@ -1,1 +1,20 @@
-<p>details works!</p>
+<article class="row flex-row-reverse justify-content-evenly">
+    <img
+      class="object-fit-cover rounded-5 col-5" style=" height: 400px;"
+      [src]="housingLocation?.photo"
+      alt="Exterior photo of {{ housingLocation?.name }}"
+      crossorigin
+    />
+    <section class="col-5">
+        <section>
+          <h1 class="listing-heading">{{ housingLocation?.name }}</h1>
+          <p class="listing-location">{{ housingLocation?.city }}, {{ housingLocation?.state }}</p>
+        </section>
+      <h3 class="text-primary">About this housing location</h3>
+      <ul>
+        <li>Units available: {{ housingLocation?.availableUnits }}</li>
+        <li>Does this location have wifi: {{ housingLocation?.wifi }}</li>
+        <li>Does this location have laundry: {{ housingLocation?.laundry }}</li>
+      </ul>
+    </section>
+  </article>
