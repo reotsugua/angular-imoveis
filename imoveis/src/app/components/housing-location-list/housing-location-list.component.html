@@ -1,0 +1,7 @@
+<section class="d-flex flex-wrap">
+    @for(housingLocation of housingLocationList(); track housingLocation.id){
+        <app-housing-location class="mx-auto my-2" [housingLocation]="housingLocation"></app-housing-location>
+    } @empty{
+        lista vazia
+    }
+</section>

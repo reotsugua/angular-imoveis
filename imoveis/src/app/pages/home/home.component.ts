@@ -1,12 +1,12 @@
 import { Component, inject } from '@angular/core';
-import { HousingLocationComponent } from "../housing-location/housing-location.component";
 import { HousingLocation } from '../../model/housing-location';
 import { HousingService } from '../../service/housing.service';
+import { HousingLocationListComponent } from "../../components/housing-location-list/housing-location-list.component";
 
 
 @Component({
   selector: 'app-home',
-  imports: [HousingLocationComponent],
+  imports: [HousingLocationListComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
