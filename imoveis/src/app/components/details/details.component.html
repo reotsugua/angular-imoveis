@@ -1,20 +1,43 @@
 <article class="row flex-row-reverse justify-content-evenly">
-    <img
-      class="object-fit-cover rounded-5 col-5" style=" height: 400px;"
-      [src]="housingLocation?.photo"
-      alt="Exterior photo of {{ housingLocation?.name }}"
-      crossorigin
-    />
-    <section class="col-5">
-        <section>
-          <h1 class="listing-heading">{{ housingLocation?.name }}</h1>
-          <p class="listing-location">{{ housingLocation?.city }}, {{ housingLocation?.state }}</p>
-        </section>
-      <h3 class="text-primary">About this housing location</h3>
-      <ul>
-        <li>Units available: {{ housingLocation?.availableUnits }}</li>
-        <li>Does this location have wifi: {{ housingLocation?.wifi }}</li>
-        <li>Does this location have laundry: {{ housingLocation?.laundry }}</li>
-      </ul>
+  <img class="object-fit-cover rounded-5 col-5" style=" height: 400px;" [src]="housingLocation?.photo"
+    alt="Exterior photo of {{ housingLocation?.name }}" crossorigin />
+  <section class="col-5">
+    <section>
+      <h1 class="listing-heading">{{ housingLocation?.name }}</h1>
+      <p class="listing-location">{{ housingLocation?.city }}, {{ housingLocation?.state }}</p>
     </section>
-  </article>
+    <h3 class="text-primary">About this housing location</h3>
+    <ul>
+      <li>Units available: {{ housingLocation?.availableUnits }}</li>
+      <li>Does this location have wifi: {{ housingLocation?.wifi }}</li>
+      <li>Does this location have laundry: {{ housingLocation?.laundry }}</li>
+    </ul>
+
+    <section class="mt-5">
+      <h2 class="section-heading">Apply now to live here</h2>
+      <form [formGroup]="applyForm" (submit)="submitApplication()">
+  
+        <div class="form-floating mb-3">
+          <input formControlName="firstName" id="floatingInput" type="text" class="form-control"
+            placeholder="digite seu nome">
+          <label for="floatingInput">First name</label>
+        </div>
+  
+        <div class="form-floating mb-3">
+          <input formControlName="lastName" id="floatingPassword" type="text" class="form-control"
+            placeholder="digite seu sobrenome">
+          <label for="floatingPassword">Last name</label>
+        </div>
+  
+        <div class="input-group mb-3">
+          <span class="input-group-text">{{"@"}}</span>
+          <input formControlName="email" type="email" class="form-control" placeholder="email" aria-label="email"
+            aria-describedby="input-email">
+        </div>
+  
+        <button type="submit" class="btn btn-success w-100">Enviar</button>
+      </form>
+    </section>
+  </section>
+  
+</article>
