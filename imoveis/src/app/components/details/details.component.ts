@@ -17,6 +17,8 @@ export class DetailsComponent {
 
   housingLocation: HousingLocation | undefined = this.housingService.getHousingLocationById(this.housingLocationId);
 
+
+
   applyForm = new FormGroup({
     firstName: new FormControl(''),
     lastName: new FormControl(''),
