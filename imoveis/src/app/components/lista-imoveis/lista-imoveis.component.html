@@ -1,5 +1,5 @@
-<section class="d-flex overflow-auto gap-4 my-3">
-    @for(housingLocation of housingLocationList; track housingLocation.id){
+<section [class]="listClasses" style="height: 370px;">
+    @for(housingLocation of filteredListByCategory; track housingLocation.id){
         <app-housing-location [housingLocation]="housingLocation"></app-housing-location>
     } @empty{
         lista vazia

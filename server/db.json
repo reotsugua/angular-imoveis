@@ -9,7 +9,7 @@
     "availableUnits": 4,
     "wifi": true,
     "laundry": true,
-    "categoria": "oferta",
+    "categoria": "ofertas",
     "favorite": false
   },
   {
@@ -21,7 +21,7 @@
     "availableUnits": 0,
     "wifi": false,
     "laundry": true,
-    "categoria": "novidade",
+    "categoria": "novidades",
     "favorite": false
   },
   {
@@ -33,7 +33,7 @@
     "availableUnits": 1,
     "wifi": false,
     "laundry": false,
-    "categoria": "maisBuscados",
+    "categoria": "mais-buscados",
     "favorite": false
   },
   {
@@ -45,7 +45,7 @@
     "availableUnits": 1,
     "wifi": true,
     "laundry": false,
-    "categoria": "oferta",
+    "categoria": "ofertas",
     "favorite": false
   },
   {
@@ -57,7 +57,7 @@
     "availableUnits": 1,
     "wifi": true,
     "laundry": false,
-    "categoria": "novidade",
+    "categoria": "novidades",
     "favorite": false
   },
   {
@@ -69,7 +69,7 @@
     "availableUnits": 2,
     "wifi": true,
     "laundry": true,
-    "categoria": "maisBuscados",
+    "categoria": "mais-buscados",
     "favorite": false
   },
   {
@@ -81,7 +81,7 @@
     "availableUnits": 5,
     "wifi": true,
     "laundry": true,
-    "categoria": "oferta",
+    "categoria": "ofertas",
     "favorite": false
   },
   {
@@ -93,7 +93,7 @@
     "availableUnits": 2,
     "wifi": true,
     "laundry": true,
-    "categoria": "novidade",
+    "categoria": "novidades",
     "favorite": false
   },
   {
@@ -105,7 +105,7 @@
     "availableUnits": 10,
     "wifi": false,
     "laundry": false,
-    "categoria": "maisBuscados",
+    "categoria": "mais-buscados",
     "favorite": false
   },
   {
@@ -117,7 +117,7 @@
     "availableUnits": 6,
     "wifi": true,
     "laundry": true,
-    "categoria": "oferta",
+    "categoria": "ofertas",
     "favorite": false
   }
 ]
