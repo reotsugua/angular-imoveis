@@ -1,32 +1,6 @@
-<main class="container">
-  <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-    <div class="col-md-3 mb-2 mb-md-0">
-      <a [routerLink]="['/']" class="d-inline-flex link-body-emphasis text-decoration-none">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-houses-fill text-primary" viewBox="0 0 16 16">
-          <path d="M7.207 1a1 1 0 0 0-1.414 0L.146 6.646a.5.5 0 0 0 .708.708L1 7.207V12.5A1.5 1.5 0 0 0 2.5 14h.55a2.5 2.5 0 0 1-.05-.5V9.415a1.5 1.5 0 0 1-.56-2.475l5.353-5.354z"/>
-          <path d="M8.793 2a1 1 0 0 1 1.414 0L12 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l1.854 1.853a.5.5 0 0 1-.708.708L15 8.207V13.5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 4 13.5V8.207l-.146.147a.5.5 0 1 1-.708-.708z"/>
-        </svg> 
-        <span class="ms-3 text-primary">HOMES</span>
-      </a>
-    </div>
 
-    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-      <li><a routerLink="/" routerLinkActive="text-secondary" [routerLinkActiveOptions]="{ exact: true }" class="nav-link px-2">Home</a></li>
-      <li><a routerLink="/list" routerLinkActive="text-secondary" class="nav-link px-2">list</a></li>
-      <li><a routerLink="/location" routerLinkActive="text-secondary" class="nav-link px-2">location</a></li>
-      <li><a href="#" class="nav-link px-2">FAQs</a></li>
-      <li><a href="#" class="nav-link px-2">About</a></li>
-    </ul>
+<app-navbar />
+<router-outlet />
 
-    <div class="col-md-3 text-end">
-      <button type="button" class="btn btn-outline-primary me-2">Login</button>
-      <button type="button" class="btn btn-primary">Sign-up</button>
-    </div>
-  </header>
-
-  <section class="content">
-    <router-outlet />
-  </section>
-</main>
 
 

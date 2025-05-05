@@ -1,0 +1,26 @@
+<nav class="py-2 mb-3 border-bottom">
+    <div class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
+
+        <div class="col-md-3 mb-2 mb-md-0">
+          <a [routerLink]="['/']" class="d-inline-flex link-body-emphasis text-decoration-none">
+            <img class="w-75" src="logo.png" alt="logo lar ideal">
+          </a>
+        </div>
+    
+        <ul class="h6 nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a routerLink="/" routerLinkActive="text-secondary" [routerLinkActiveOptions]="{ exact: true }" class="nav-link px-2">Home</a></li>
+          <li><a routerLink="/lista-imoveis" routerLinkActive="text-secondary" class="nav-link px-2">Alugar</a></li>
+          <li><a routerLink="/quem-somos" routerLinkActive="text-secondary" class="nav-link px-2">Quem Somos</a></li>
+        </ul>
+    
+        <div class="col-md-3 text-end">
+          <button routerLink="/anuncie" routerLinkActive="text-secondary" type="button" class="btn btn-sm  btn-primary  me-3">Anunciar</button>
+          <a routerLink="/favoritos" routerLinkActive="text-danger" class="text-decoration-none" title="Favoritos">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+            </svg>
+          </a>
+          
+        </div>
+    </div>
+</nav>
