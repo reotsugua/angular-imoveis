@@ -35,7 +35,7 @@ export const routes: Routes = [
   { path: 'details/:id', component: DetailsComponent, title: 'Detalhes' },
   {
     path: 'alugar/:local/:tipoImovel',
-    component: DetailsComponent,
+    loadComponent: () => import('./pages/alugar/alugar.component').then(m => m.AlugarComponent),
     title: 'Alugar',
   },
 ];
