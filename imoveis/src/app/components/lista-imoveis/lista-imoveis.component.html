@@ -1,0 +1,7 @@
+<section class="d-flex overflow-auto gap-4 my-3">
+    @for(housingLocation of housingLocationList; track housingLocation.id){
+        <app-housing-location [housingLocation]="housingLocation"></app-housing-location>
+    } @empty{
+        lista vazia
+    }
+</section>
