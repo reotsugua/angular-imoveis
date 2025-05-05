@@ -70,7 +70,7 @@
     "wifi": true,
     "laundry": true,
     "categoria": "mais-buscados",
-    "favorite": false
+    "favorite": true
   },
   {
     "id": 6,
@@ -106,7 +106,7 @@
     "wifi": false,
     "laundry": false,
     "categoria": "mais-buscados",
-    "favorite": false
+    "favorite": true
   },
   {
     "id": 9,

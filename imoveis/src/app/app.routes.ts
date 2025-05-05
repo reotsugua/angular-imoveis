@@ -3,6 +3,7 @@ import { DetailsComponent } from './components/details/details.component';
 import { NewHomeComponent } from './pages/new-home/new-home.component';
 import { ListaImoveisComponent } from './components/lista-imoveis/lista-imoveis.component';
 import { CategoriaImovel } from './enums/categoria-imovel.enum';
+import { FavoritosComponent } from './pages/favoritos/favoritos.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -37,5 +38,10 @@ export const routes: Routes = [
     path: 'alugar/:local/:tipoImovel',
     loadComponent: () => import('./pages/alugar/alugar.component').then(m => m.AlugarComponent),
     title: 'Alugar',
+  },
+  {
+    path: 'favoritos',
+    loadComponent: () => import('./pages/favoritos/favoritos.component').then(m => m.FavoritosComponent),
+    title: 'Favoritos',
   },
 ];
