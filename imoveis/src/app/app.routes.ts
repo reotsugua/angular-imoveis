@@ -1,9 +1,7 @@
 import { Routes } from '@angular/router';
-import { DetailsComponent } from './components/details/details.component';
 import { NewHomeComponent } from './pages/new-home/new-home.component';
 import { ListaImoveisComponent } from './components/lista-imoveis/lista-imoveis.component';
 import { CategoriaImovel } from './enums/categoria-imovel.enum';
-import { FavoritosComponent } from './pages/favoritos/favoritos.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -33,7 +31,8 @@ export const routes: Routes = [
       },
     ],
   },
-  { path: 'details/:id', component: DetailsComponent, title: 'Detalhes' },
+  { path: 'details/:id', loadComponent: () => import('./components/details/details.component').then(m => m.DetailsComponent),
+     title: 'Detalhes' },
   {
     path: 'alugar/:local/:tipoImovel',
     loadComponent: () => import('./pages/alugar/alugar.component').then(m => m.AlugarComponent),

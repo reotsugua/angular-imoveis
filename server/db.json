@@ -46,7 +46,7 @@
     "wifi": true,
     "laundry": false,
     "categoria": "ofertas",
-    "favorite": false
+    "favorite": true
   },
   {
     "id": 4,
@@ -58,7 +58,7 @@
     "wifi": true,
     "laundry": false,
     "categoria": "novidades",
-    "favorite": false
+    "favorite": true
   },
   {
     "id": 5,
