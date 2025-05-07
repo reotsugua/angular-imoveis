@@ -17,7 +17,7 @@ export class ListaImoveisComponent implements OnInit{
   route: ActivatedRoute = inject(ActivatedRoute);
   category: string = this.route.snapshot.data['tipo'];
 
-  listClasses = 'd-flex overflow-auto gap-4 my-3';
+  listClasses = 'd-flex overflow-auto gap-4 my-3 justify-content-center';
 
 
   ngOnInit(): void {
@@ -30,11 +30,10 @@ export class ListaImoveisComponent implements OnInit{
         const category = data['tipo'];
         this.filteredListByCategory = this.housingLocationList.filter(
           (imovel) => imovel.categoria === category
-        );
-
-        console.log('Categoria:', category);
-        console.log('Filtrados:', this.filteredListByCategory);
+        ).slice(0, 4);
       });
+
+
     });
   }
 

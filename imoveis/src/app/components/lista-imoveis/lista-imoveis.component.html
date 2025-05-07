@@ -1,4 +1,4 @@
-<section [class]="listClasses" style="height: 370px;">
+<section [class]="listClasses" style="height: 380px;">
     @for(housingLocation of filteredListByCategory; track housingLocation.id){
         <app-housing-location [housingLocation]="housingLocation"></app-housing-location>
     } @empty{
