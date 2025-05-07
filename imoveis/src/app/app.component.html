@@ -1,6 +1,7 @@
-
 <app-navbar />
 <router-outlet />
-
-
-
+@defer (on viewport){
+    <app-footer />
+} @placeholder {
+    <p>Loading footer...</p>
+}
