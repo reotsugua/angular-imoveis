@@ -5,13 +5,18 @@ import { HousingLocation } from '../model/housing-location';
   providedIn: 'root'
 })
 export class HousingService {
-  readonly url = 'http://localhost:3000/locations';
+  // readonly url = 'http://localhost:3000/locations';
+  readonly url = 'https://reotsugua.github.io/angular-imoveis/server/db.json';
 
   protected housingLocationList: HousingLocation[] = [];
 
   async getAllHousingLocations(): Promise<HousingLocation[]> {
     const data = await fetch(this.url);
-    this.housingLocationList = (await data.json()) ?? [];
+    // this.housingLocationList = (await data.json()) ?? [];
+
+    const {locations} = (await data.json()) ?? [];
+    
+    this.housingLocationList = locations;
     
     return this.housingLocationList;
   }
