@@ -6,7 +6,7 @@ import { HousingLocation } from '../model/housing-location';
 })
 export class HousingService {
   // readonly url = 'http://localhost:3000/locations';
-  readonly url = 'https://reotsugua.github.io/angular-imoveis/server/db.json';
+  readonly url = 'https://reotsugua.github.io/json-db/db/imoveis.json';
 
   protected housingLocationList: HousingLocation[] = [];
 
